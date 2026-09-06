@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Certificate Request</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f6f8;
+        }
+
+        .form {
+            width: 500px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #ccc;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #1f3c88;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form">
+
+    <h2>Certificate Request</h2>
+
+    <label>Student Name</label>
+    <input type="text" id="studentName">
+
+    <label>Student ID</label>
+    <input type="text" id="studentId">
+
+    <label>Certificate Type</label>
+    <select id="certificateType">
+        <option value="">Select Certificate</option>
+        <option>Bonafide Certificate</option>
+        <option>Study Certificate</option>
+        <option>Course Completion Certificate</option>
+        <option>Transfer Certificate</option>
+    </select>
+
+    <label>Supporting Document</label>
+    <input type="file" id="supportingDocument">
+
+    <button onclick="submitForm()">Request Certificate</button>
+
+</div>
+
+<script>
+function submitForm() {
+    alert("Certificate request submitted successfully (Demo)");
+}
+</script>
+
+</body>
+</html>

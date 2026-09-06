@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Registration</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f6f8;
+        }
+
+        .form {
+            width: 500px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #ccc;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #1f3c88;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form">
+
+    <h2>Course Registration</h2>
+
+    <label>Student Name</label>
+    <input type="text" id="studentName">
+
+    <label>Student ID</label>
+    <input type="text" id="studentId">
+
+    <label>Semester</label>
+    <select id="semester">
+        <option value="">Select Semester</option>
+        <option>2-1</option>
+        <option>2-2</option>
+    </select>
+
+    <label>Course</label>
+    <select id="course">
+        <option value="">Select Course</option>
+        <option>Database Management Systems</option>
+        <option>Design and Analysis of Algorithms</option>
+        <option>Python Programming</option>
+        <option>Theory of Computation</option>
+    </select>
+
+    <button onclick="submitForm()">Register Course</button>
+
+</div>
+
+<script>
+function submitForm() {
+    alert("Course registration submitted successfully (Demo)");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scholarship Application</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f6f8;
+        }
+
+        .form {
+            width: 550px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #ccc;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #1f3c88;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form">
+
+    <h2>Scholarship Application</h2>
+
+    <label>Student Name</label>
+    <input type="text" id="studentName">
+
+    <label>Application Number</label>
+    <input type="text" id="applicationNumber">
+
+    <label>Income Certificate Number</label>
+    <input type="text" id="incomeCertificateNumber">
+
+    <label>Category</label>
+    <select id="category">
+        <option value="">Select Category</option>
+        <option>General</option>
+        <option>OBC</option>
+        <option>SC</option>
+        <option>ST</option>
+    </select>
+
+    <label>ID Proof</label>
+    <input type="file" id="idProof">
+
+    <label>Income Certificate</label>
+    <input type="file" id="incomeCertificate">
+
+    <label>Marks Memo</label>
+    <input type="file" id="marksMemo">
+
+    <button onclick="submitForm()">Submit Application</button>
+
+</div>
+
+<script>
+function submitForm() {
+    alert("Scholarship application submitted successfully (Demo)");
+}
+</script>
+
+</body>
+</html>

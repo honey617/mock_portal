@@ -41,11 +41,11 @@
 
     <h2>Certificate Request</h2>
 
-    <label>Student Name</label>
-    <input type="text" id="studentName">
+    <label for="StudentName">Student Name</label>
+    <input type="text" id="studentName" name="studentName">
 
-    <label>Student ID</label>
-    <input type="text" id="studentId">
+    <label for="Student ID">Student ID</label>
+    <input type="text" id="studentId" name="StudentId">
 
     <label>Certificate Type</label>
     <select id="certificateType">
@@ -56,8 +56,8 @@
         <option>Transfer Certificate</option>
     </select>
 
-    <label>Supporting Document</label>
-    <input type="file" id="supportingDocument">
+    <label for="Supporting Document" >Supporting Document</label>
+    <input type="file" id="supportingDocument" name="SupportingDocument">
 
     <button onclick="submitForm()">Request Certificate</button>
 
